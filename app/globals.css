@@ -161,7 +161,7 @@ a.link-apple:hover {
   cursor: pointer;
   color: var(--color-text-muted);
   font-size: var(--type-sm);
-  font-family: inherit;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
   padding: 0;
   transition: color var(--motion-fast) ease;
   letter-spacing: 0.04em;

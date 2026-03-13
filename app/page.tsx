@@ -104,7 +104,7 @@ export default function Home() {
             </p>
 
             <p style={{ marginBottom: "0.85em" }}>
-              Enpu also plays records for dance parties. Having performed at many venues in China and Japan, you can catch him playing records at Otherworld Wine in Seattle every now and then, and his latest mix on {" "}
+              Enpu also plays records for dance parties. Having performed at many venues in China and Japan, you can catch him playing records at Otherworld in Seattle every now and then, and his latest mix on {" "}
               <a
                 className="link-apple"
                 href="https://music.apple.com/us/album/bbd-selects-019-enpu-dj-mix/1871105815"
