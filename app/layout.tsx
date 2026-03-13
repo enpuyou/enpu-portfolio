@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { PreviewProvider } from "@/components/PreviewContext";
 import { LeftPanel } from "@/components/LeftPanel";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Enpu You",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <PreviewProvider>
             <LeftPanel />
             {children}
+            <Analytics />
           </PreviewProvider>
         </ThemeProvider>
       </body>
