@@ -4,18 +4,18 @@
 
 /* ─── Design tokens ──────────────────────────────────────────── */
 :root {
-  --type-xs:   10px;
-  --type-sm:   13px;
-  --type-base: 16px;
-  --type-lg:   20px;
-  --type-xl:   26px;
+  --type-xs:   12px;
+  --type-sm:   15px;
+  --type-base: 18px;
+  --type-lg:   23px;
+  --type-xl:   30px;
 
   --motion-instant: 80ms;
   --motion-fast:   150ms;
   --motion-normal: 250ms;
   --motion-slow:   400ms;
 
-  --col-width: 560px;
+  --col-width: 640px;
   --col-padding: 2rem;
 }
 

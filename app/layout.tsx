@@ -7,7 +7,6 @@ import { LeftPanel } from "@/components/LeftPanel";
 export const metadata: Metadata = {
   title: "Enpu You",
   description: "Software engineer, Seattle.",
-  icons: { icon: "/favicon.svg" },
 };
 
 export const viewport: Viewport = {

@@ -36,9 +36,9 @@ export default function Home() {
     <main
       className="main-layout"
       style={{
-        paddingTop: "7rem",
+        paddingTop: "13rem",
         paddingBottom: "10rem",
-        paddingLeft: "27rem",
+        paddingLeft: "35rem",
         paddingRight: "8rem",
       }}
     >
@@ -61,7 +61,7 @@ export default function Home() {
           <div
             style={{
               color: "var(--color-text)",
-              fontSize: "var(--type-sm)",
+              fontSize: "var(--type-base)",
               lineHeight: 1.25,
               marginBottom: "4rem",
             }}
@@ -176,7 +176,7 @@ export default function Home() {
                   target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noopener noreferrer" : undefined}
                   style={{
-                    fontSize: "var(--type-sm)",
+                    fontSize: "var(--type-base)",
                     color: "var(--color-text)",
                   }}
                 >
