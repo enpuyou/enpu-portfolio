@@ -8,6 +8,9 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Enpu You",
   description: "Software engineer, Seattle.",
+  icons: {
+    icon: "/icon?v=1",
+  },
 };
 
 export const viewport: Viewport = {
