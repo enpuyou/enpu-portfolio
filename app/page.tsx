@@ -75,7 +75,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 sed.i
-              </a>{""}, a tool for personal reading and curation. He is currently finishing the master&apos;s program in information systems at the University of Washington.
+              </a>{""}, a tool for personal reading and curation. A graduate from Allegheny College with double majors in Computer Science and Classical Piano, he is currently completing the master&apos;s program in information systems at the University of Washington.
             </p>
 
             <p style={{ marginBottom: "0.85em" }}>
