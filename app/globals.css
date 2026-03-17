@@ -192,6 +192,11 @@ a.link-apple:hover {
 .delay-5 { animation-delay: 300ms; }
 .delay-6 { animation-delay: 360ms; }
 
+/* ─── Link preview styling ─────────────────────────────────────── */
+.preview-card img {
+  will-change: opacity;
+}
+
 /* ─── Mobile ──────────────────────────────────────────────────── */
 @media (max-width: 640px) {
   :root {
@@ -211,5 +216,9 @@ a.link-apple:hover {
   .theme-toggle-fixed {
     top: 1rem !important;
     right: 1rem !important;
+  }
+  /* Hide preview on mobile */
+  .preview-card {
+    display: none !important;
   }
 }

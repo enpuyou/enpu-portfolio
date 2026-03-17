@@ -9,6 +9,7 @@ interface LinkPreviewProps {
   preview: {
     title: string;
     description: string;
+    image?: string;
   };
   external?: boolean;
 }
@@ -19,7 +20,7 @@ export function LinkPreview({ href, children, preview, external }: LinkPreviewPr
   const trigger = (
     <span
       style={{ display: "inline", fontSize: "var(--type-sm)" }}
-      onMouseEnter={() => setPreview(preview)}
+      onMouseEnter={() => setPreview({ ...preview, url: href })}
       onMouseLeave={() => setPreview(null)}
     >
       {children}

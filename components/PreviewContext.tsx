@@ -5,6 +5,8 @@ import { createContext, useContext, useState } from "react";
 interface PreviewContent {
   title: string;
   description: string;
+  image?: string;
+  url?: string;
 }
 
 const PreviewContext = createContext<{
