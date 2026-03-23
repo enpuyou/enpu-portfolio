@@ -192,11 +192,6 @@ a.link-apple:hover {
 .delay-5 { animation-delay: 300ms; }
 .delay-6 { animation-delay: 360ms; }
 
-/* ─── Link preview styling ─────────────────────────────────────── */
-.preview-card img {
-  will-change: opacity;
-}
-
 /* ─── Mobile ──────────────────────────────────────────────────── */
 @media (max-width: 640px) {
   :root {

@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { PreviewProvider } from "@/components/PreviewContext";
-import { LeftPanel } from "@/components/LeftPanel";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -35,11 +33,8 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <PreviewProvider>
-            <LeftPanel />
-            {children}
-            <Analytics />
-          </PreviewProvider>
+          {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

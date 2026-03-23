@@ -1,6 +1,5 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { NameHover } from "@/components/NameHover";
-import { LinkPreview } from "@/components/LinkPreview";
 import { FocusBlock } from "@/components/FocusBlock";
 
 const writing = [
@@ -29,38 +28,21 @@ const links = [
     label: "GitHub",
     href: "https://github.com/enpuyou",
     external: true,
-    preview: {
-      title: "GitHub Profile",
-      description: "Software engineer's public projects and contributions",
-      image: "https://opengraph.githubusercon tent.com/1234567890/enpuyou/github-dark",
-    },
   },
   {
     label: "LinkedIn",
     href: "https://linkedin.com/in/enpuyou",
     external: true,
-    preview: {
-      title: "LinkedIn Profile",
-      description: "Professional experience and endorsements",
-    },
   },
   {
     label: "Email",
     href: "mailto:enpuyou@gmail.com",
     external: false,
-    preview: {
-      title: "Send Email",
-      description: "enpuyou@gmail.com",
-    },
   },
   {
     label: "CV",
     href: "/cv.pdf",
     external: true,
-    preview: {
-      title: "Resume / CV",
-      description: "Full professional background and experience",
-    },
   },
 ];
 
@@ -203,14 +185,18 @@ export default function Home() {
           <section>
             <div style={{ display: "flex", gap: "1.2rem" }}>
               {links.map((link) => (
-                <LinkPreview
+                <a
                   key={link.label}
                   href={link.href}
-                  preview={link.preview}
-                  external={link.external}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  style={{
+                    fontSize: "var(--type-base)",
+                    color: "var(--color-text)",
+                  }}
                 >
                   {link.label}
-                </LinkPreview>
+                </a>
               ))}
             </div>
           </section>
