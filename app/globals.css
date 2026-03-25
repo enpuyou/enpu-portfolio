@@ -15,22 +15,22 @@
   --motion-normal: 250ms;
   --motion-slow:   400ms;
 
-  --col-width: 640px;
+  --col-width: 560px;
   --col-padding: 2rem;
 }
 
 /* ─── Dark mode (default) ─────────────────────────────────────── */
 :root,
 [data-theme="dark"] {
-  --color-bg:             #080e32;
+  --color-bg:             #171c36;
   --color-bg-subtle:      #0d1540;
   --color-text:           rgba(255, 255, 255, 0.88);
   --color-text-secondary: rgba(255, 255, 255, 0.52);
   --color-text-muted:     rgba(255, 255, 255, 0.28);
   --color-border:         rgba(255, 255, 255, 0.09);
-  --color-accent:         #407060;
+  --color-accent:         #607f94;
   --color-accent-hover:   #4e8c74;
-  --color-link:           #5aa87e;
+  --color-link:           #607f94;
 }
 
 /* ─── Light mode ──────────────────────────────────────────────── */
@@ -91,8 +91,52 @@ body {
 .col {
   width: 100%;
   max-width: var(--col-width);
-  margin: 0 auto;
   padding: 0 var(--col-padding);
+}
+
+/* ─── Layout ──────────────────────────────────────────────────── */
+.main-layout {
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: clamp(4rem, 10vw, 10rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+  padding-left: 40rem;
+  padding-right: 10rem;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .main-layout {
+    padding-left: clamp(1.5rem, 30vw, 55rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .main-layout {
+    padding: 4rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.theme-toggle-fixed {
+  position: fixed;
+  top: clamp(1rem, 2vh, 1.5rem);
+  right: clamp(1rem, 2vw, 1.75rem);
+  z-index: 50;
+}
+
+.bio-content {
+  color: var(--color-text);
+  font-size: var(--type-base);
+  line-height: 1.28;
+  margin-bottom: 4rem;
+}
+
+.bio-content p {
+  margin-bottom: 0.85em;
 }
 
 /* ─── Links ───────────────────────────────────────────────────── */
@@ -199,21 +243,5 @@ a.link-apple:hover {
   }
   .reader-body {
     font-size: 16px;
-  }
-  /* Home page: collapse left padding on mobile */
-  .main-layout {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-  /* Keep theme toggle visible but not overlapping content */
-  .theme-toggle-fixed {
-    top: 1rem !important;
-    right: 1rem !important;
-  }
-  /* Hide preview on mobile */
-  .preview-card {
-    display: none !important;
   }
 }

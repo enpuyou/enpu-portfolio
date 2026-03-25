@@ -48,41 +48,17 @@ const links = [
 
 export default function Home() {
   return (
-    <main
-      className="main-layout"
-      style={{
-        paddingTop: "13rem",
-        paddingBottom: "10rem",
-        paddingLeft: "35rem",
-        paddingRight: "8rem",
-      }}
-    >
-      {/* Fixed toggle — upper right corner of viewport */}
-      <div
-        className="theme-toggle-fixed"
-        style={{
-          position: "fixed",
-          top: "1.5rem",
-          right: "1.75rem",
-          zIndex: 50,
-        }}
-      >
+    <main className="main-layout">
+      <div className="theme-toggle-fixed">
         <ThemeToggle />
       </div>
 
-      <div className="col">
+      <div>
         {/* Bio */}
         <FocusBlock initiallyVisible>
-          <div
-            style={{
-              color: "var(--color-text)",
-              fontSize: "var(--type-base)",
-              lineHeight: 1.25,
-              marginBottom: "4rem",
-            }}
-          >
+          <div className="bio-content">
             <p style={{ marginBottom: "0.85em" }}>
-              Originally from Jinhua, <NameHover /> is a software engineer currently based in Seattle. He builds backend systems and
+              Originally from Jinhua, <NameHover /> is a software engineer currently based in Seattle. He has spent the last few years building the plumbing behind enterprise software, and more recently,
               {" "}
               <a
                 href="https://www.read-sedi.com"
@@ -90,7 +66,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 sed.i
-              </a>{""}, a tool for personal reading and curation. A graduate from Allegheny College with double majors in Computer Science and Classical Piano, he is currently completing the master&apos;s program in information systems at the University of Washington.
+              </a>{""}, a tool for his own personal reading and curation. A graduate from Allegheny College with double majors in Computer Science and Classical Piano, he is currently completing the master&apos;s program in information systems at the University of Washington.
             </p>
 
             <p style={{ marginBottom: "0.85em" }}>
@@ -98,7 +74,7 @@ export default function Home() {
               <a href="https://sciencelogic.com" target="_blank" rel="noopener noreferrer">
                 ScienceLogic
               </a>
-              , he worked on webhook service, ingestion and postprocessing pipelines, and components for multi-tenant analytics
+              , he worked on webhook service, metric ingestion and postprocessing pipelines, and components for multi-tenant analytics
               for IT monitoring software.
             </p>
 
@@ -115,11 +91,11 @@ export default function Home() {
               >
                 café
               </a>{" "}
-              in Pittsburgh that led to the establishment of a city-wide crisis support program for frontend retail and food service workers.
+              in Pittsburgh that led to the establishment of a city-wide crisis support program for front end retail and food service workers.
             </p>
 
             <p style={{ marginBottom: "0.85em" }}>
-              Enpu also plays records for dance parties. Having performed at many venues in China and Japan, you can catch him playing records at Otherworld in Seattle every now and then, and his latest mix on {" "}
+              Enpu also plays records for dance parties. Having performed at many venues in China and Japan, you can catch him behind the deck at Otherworld in Seattle every now and then, and his latest mix on {" "}
               <a
                 className="link-apple"
                 href="https://music.apple.com/us/album/bbd-selects-019-enpu-dj-mix/1871105815"
